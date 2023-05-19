@@ -25,7 +25,7 @@ export default {
     <section>
         <div class="boxed boxedHeader flex">
             <div class="logo">
-                <img src="../assets/img/dc-logo.png" alt="">
+                <img src="public/assets/img/dc-logo.png" alt="">
             </div>
             <div class="menu">
                 <a v-for="link in links" href="">{{ link }}</a>
@@ -38,17 +38,22 @@ export default {
 .boxedHeader {
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .boxedHeader img {
-    max-width: 80px;
+    max-width: 70px;
 }
 
 .menu a {
     text-decoration: none;
     font-size: 13px;
     margin-right: 20px;
-    color: #333;
+    color: #666;
+    font-weight: 800;
+}
+
+.menu a:hover {
+    color: #0282f9;
 }
 </style>
