@@ -43,9 +43,14 @@
 .signIn button {
     color: white;
     background-color: #303030;
-    border: 2px solid #0282f9;
     padding: 10px;
     cursor: pointer;
+    border: 2px solid #303030;
+}
+
+.signIn button:hover {
+    border: 2px solid #0282f9;
+
 }
 
 .socials {
