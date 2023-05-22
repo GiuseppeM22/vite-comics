@@ -1,6 +1,16 @@
 <script>
 
+import cardsApp from './cardsApp.vue'
+
+
 export default {
+    props: {
+        images: Object
+    },
+
+    components: {
+        cardsApp,
+    },
     data() {
         return {
             icons: [
@@ -38,6 +48,8 @@ export default {
     <section class="bg_black">
         <div class="boxed boxedMain">
             <h3> -- Content goes here -- </h3>
+
+            <cardsApp />
         </div>
     </section>
     <!-- sezione colore blue -->
